@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="723.0" prefWidth="984.0" styleClass="anchor-tab-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.questioncatalog.QuestionCatalogModalController">
+   <children>
+      <VBox prefHeight="722.0" prefWidth="984.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="77.0" prefWidth="984.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="499.0">
+                     <children>
+                        <Label text="Name:" />
+                        <TextField fx:id="questionCatalogNameInput">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="addQuestionTemplateButton" mnemonicParsing="false" onAction="#addQuestionTemplate" text="add" />
+                        <Button fx:id="editQuestionTemplateButton" mnemonicParsing="false" onAction="#editQuestionTemplate" text="edit" />
+                        <Button fx:id="delQuestionTemplateButton" mnemonicParsing="false" onAction="#delQuestionTemplate" text="del" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <TableView fx:id="questionTemplateTableview" prefHeight="565.0" prefWidth="974.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onCancel" text="Abbrechen" />
+                  <Button mnemonicParsing="false" onAction="#onSave" text="Speichern" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

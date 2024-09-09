@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorQuestion" minWidth="900.0" prefHeight="120.0" style="-fx-background-color: #EEE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.performancerating.QuestionAnswerController">
+   <children>
+      <Separator layoutX="14.0" layoutY="19.0" prefHeight="3.0" prefWidth="1070.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="7.0" prefHeight="27.0" prefWidth="71.0" style="-fx-background-color: #EEE;" text="Question" textAlignment="CENTER" textFill="#1fbbe4" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="31.0" text="Title" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="31.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextArea fx:id="questionAnswerField" layoutX="735.0" layoutY="49.0" prefHeight="58.0" prefWidth="350.0" AnchorPane.leftAnchor="735.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="316.0" layoutY="31.0" text="Description" AnchorPane.leftAnchor="316.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="735.0" layoutY="31.0" prefHeight="17.0" prefWidth="46.0" text="Rating">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="questionTitleLabel" alignment="TOP_LEFT" layoutX="16.0" layoutY="51.0" prefHeight="58.0" prefWidth="250.0" text="Label" wrapText="true" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="51.0" />
+      <Label fx:id="questionDescriptionLabel" alignment="TOP_LEFT" layoutX="316.0" layoutY="51.0" prefHeight="58.0" prefWidth="350.0" wrapText="true" AnchorPane.leftAnchor="316.0" AnchorPane.topAnchor="51.0" />
+   </children>
+</AnchorPane>

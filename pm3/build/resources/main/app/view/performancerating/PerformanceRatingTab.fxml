@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="anchor-tab-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.performancerating.PerformanceRatingTabController">
+    <children>
+        <Button fx:id="addPerformanceRatingButton" layoutX="837.0" layoutY="14.0" mnemonicParsing="false" onAction="#addPerformanceRating" text="add" />
+        <Button fx:id="editPerformanceRatingButton" layoutX="884.0" layoutY="14.0" mnemonicParsing="false" onAction="#editPerformanceRating" text="edit" />
+        <Button fx:id="delPerformanceRatingButton" layoutX="933.0" layoutY="14.0" mnemonicParsing="false" onAction="#delPerformanceRating" text="del" />
+        <Button fx:id="openPerformanceRatingButton" layoutX="933.0" layoutY="14.0" mnemonicParsing="false" onAction="#openPerformanceRating" text="open" />
+        <TableView fx:id="performanceRatingTableView" layoutX="23.0" layoutY="52.0" prefHeight="540.0" prefWidth="956.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+    </children>
+</AnchorPane>

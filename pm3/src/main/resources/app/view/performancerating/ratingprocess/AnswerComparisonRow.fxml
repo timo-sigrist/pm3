@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorAnswer" minWidth="900.0" prefHeight="120.0" style="-fx-background-color: #EEE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.performancerating.AnswerComparisonController">
+    <children>
+        <Separator layoutX="14.0" layoutY="19.0" prefHeight="3.0" prefWidth="1070.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+        <Label fx:id="questionLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="7.0" prefHeight="27.0" prefWidth="184.0" style="-fx-background-color: #EEE;" text="Answer Comparison" textAlignment="CENTER" textFill="#1fbbe4" AnchorPane.leftAnchor="30.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="questionTitleLabel" layoutX="18.0" layoutY="49.0" text="Question" AnchorPane.leftAnchor="15.0" />
+        <TextField fx:id="questionTitleField" layoutX="17.0" layoutY="70.0" prefHeight="25.0" prefWidth="260.0" AnchorPane.leftAnchor="15.0" />
+        <TextArea fx:id="employerAnswerField" layoutX="299.0" layoutY="50.0" prefHeight="63.0" prefWidth="401.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="399.0" />
+        <Label fx:id="employerAnswerLabel" layoutX="299.0" layoutY="26.0" prefHeight="17.0" prefWidth="105.0" text="Answer Employer" AnchorPane.leftAnchor="300.0" />
+        <TextArea fx:id="employeeAnswerField" layoutX="711.0" layoutY="50.0" prefHeight="63.0" prefWidth="372.0" AnchorPane.leftAnchor="711.0" AnchorPane.rightAnchor="17.0" />
+        <Label fx:id="employeeAnswerLabel" layoutX="711.0" layoutY="26.0" text="Answer Employee" AnchorPane.leftAnchor="711.0" />
+    </children>
+</AnchorPane>

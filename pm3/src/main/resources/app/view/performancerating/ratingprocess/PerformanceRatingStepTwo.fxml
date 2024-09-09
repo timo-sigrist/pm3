@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="590.0" prefWidth="984.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.performancerating.ratingprocess.PerformanceRatingStepTwoController">
+    <children>
+        <VBox maxHeight="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <TabPane maxHeight="1.7976931348623157E308" styleClass="tabPane" stylesheets="@../../../styles.css" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+              <tabs>
+                <Tab text="Questions">
+                     <content>
+                            <AnchorPane styleClass="anchor-tab-pane">
+                                <children>
+                                    <ScrollPane fx:id="questionScrollPane" fitToWidth="true" layoutY="47.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                 <content>
+                                    <VBox fx:id="questionVBox" fillWidth="true" />
+                                 </content>
+                                    </ScrollPane>
+                                </children>
+                            </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Goals">
+                     <content>
+                            <AnchorPane prefHeight="100.0" styleClass="anchor-tab-pane">
+                                <children>
+                                    <ScrollPane fx:id="goalScrollPane" fitToWidth="true" layoutY="47.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+                                 <content>
+                                    <VBox fx:id="goalVBox" fillWidth="true" />
+                                 </content>
+                                    </ScrollPane>
+                                </children>
+                            </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TabPane>
+            </children>
+        </VBox>
+    </children>
+    <VBox.margin>
+        <Insets top="20.0" />
+    </VBox.margin>
+</AnchorPane>

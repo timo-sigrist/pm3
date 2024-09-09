@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="app.view.questioncatalog.QuestionTemplateModalController">
+    <VBox>
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="400.0"
+               text="Neue Vorlage für Frage">
+            <font>
+                <Font size="24.0"/>
+            </font>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+        </Label>
+        <GridPane prefHeight="168.0" prefWidth="400.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="90.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="310.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="118.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <TextField fx:id="titleField" prefHeight="10.0" prefWidth="202.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </GridPane.margin>
+                </TextField>
+                <TextArea fx:id="textField" prefHeight="97.0" prefWidth="300.0" GridPane.columnIndex="1"
+                          GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="10.0" top="10.0"/>
+                    </GridPane.margin>
+                </TextArea>
+                <Label text="Titel"/>
+                <Label text="Frage" GridPane.rowIndex="1"/>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0"/>
+            </padding>
+        </GridPane>
+        <HBox alignment="BASELINE_CENTER" prefHeight="0.0" prefWidth="400.0">
+            <Button onAction="#save" text="Save">
+                <HBox.margin>
+                    <Insets left="20.0" right="20.0"/>
+                </HBox.margin>
+            </Button>
+            <Button onAction="#discard" text="Discard">
+                <HBox.margin>
+                    <Insets left="20.0" right="20.0"/>
+                </HBox.margin>
+            </Button>
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+        </HBox>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.MainController">
+    <center>
+        <VBox prefHeight="768.0" prefWidth="1024.0" spacing="10.0" stylesheets="@../styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="48.0" prefWidth="984.0">
+                    <children>
+                        <Label prefHeight="35.0" prefWidth="116.0" text="Übersicht">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <image>
+                                <Image url="@../Logo_PM3.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <TabPane prefHeight="710.0" prefWidth="984.0" styleClass="tabPane" stylesheets="@../styles.css" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Leistungsbeurteilungen">
+                            <content>
+                                <fx:include source="performancerating/PerformanceRatingTab.fxml"/>
+                            </content>
+                        </Tab>
+                        <Tab text="Mitarbeiter">
+                            <content>
+                                <fx:include source="employee/EmployeeTab.fxml"/>
+                            </content>
+                        </Tab>
+                        <Tab text="Fragenkataloge">
+                            <content>
+                                <fx:include source="questioncatalog/QuestionCatalogTab.fxml"/>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>
